@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: wheel-deployment
+endpoint_name: wheel-endpoint
+model:
+  path: ../../../src/online-model/model
+code_configuration:
+  code: ../../../src/online-model
+  scoring_script: wheel_score.py
+environment: "azureml:cobot-environment:1"
+instance_type: Standard_DS1_v2
+instance_count: 1

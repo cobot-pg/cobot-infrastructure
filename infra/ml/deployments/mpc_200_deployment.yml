@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: mpc-200-deployment
+endpoint_name: mpc-200-endpoint
+model:
+  path: ../../../src/online-model/model
+code_configuration:
+  code: ../../../src/online-model
+  scoring_script: mpc_200_score.py
+environment: "azureml:cobot-environment:1"
+instance_type: Standard_DS1_v2
+instance_count: 1

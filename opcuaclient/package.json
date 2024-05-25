@@ -1,0 +1,16 @@
+{
+  "name": "opcuaclient",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "azure-iot-device": "^1.18.3",
+    "azure-iot-device-mqtt": "^1.16.3",
+    "node-opcua": "^2.127.1"
+  }
+}
